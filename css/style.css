@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.336)),
+    url("https://media-exp1.licdn.com/dms/image/C4D1BAQFVhpNDW2MoTw/company-background_10000/0/1568658087480?e=2159024400&v=beta&t=bGVYYEJ4ukiBuMG2NTQZykBPsDmKlY65t3nY86jZmQ8");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#form {
+  position: relative;
+  width: 80%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+}
+
+#TH {
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.6;
+}
+
+.wr {
+  margin: 1% 0;
+}
+
+.city_name {
+  display: inline-block;
+}
+
+.tab {
+  margin: 3% 0;
+  position: relative;
+}
+
+input {
+  margin: 0 10px;
+  padding: 6px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  background: rgba(255, 255, 255, 0.247);
+}
+
+.btn {
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 15px;
+  color: #0000ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #0000ff;
+  color: white;
+  box-shadow: 0 0 10px #0000ff;
+  transition-delay: 0.5s;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #0000ff;
+  border-left: 2px solid #0000ff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 98%;
+  height: 90%;
+  transition-delay: 0s;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #0000ff;
+  border-right: 2px solid #0000ff;
+  width: 10px;
+  height: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::after {
+  width: 98%;
+  height: 90%;
+  transition-delay: 0s;
+}
+
+@media (max-width: 800px) {
+  input {
+    display: block;
+    margin: 3% 0;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .btn {
+    display: block;
+    width: 30%;
+    margin: 3% 0;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .city_name {
+    display: block;
+  }
+
+  #form {
+    height: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  input {
+    display: block;
+    margin: 3% 0;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .btn {
+    display: block;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 10px;
+  }
+  .city_name {
+    display: block;
+  }
+
+  #form {
+    height: 50%;
+  }
+}

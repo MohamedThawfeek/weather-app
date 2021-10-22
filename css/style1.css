@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: black;
+}
+
+div {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), black),
+    url("https://p8v9g2h2.rocketcdn.me/wp-content/uploads/2021/09/iotworlds_smart_weather_stations.jpeg");
+  padding: 3% 8%;
+}
+
+.head {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.temp {
+  letter-spacing: 2px;
+  margin: 2%;
+}
+
+.min {
+  letter-spacing: 2px;
+  margin: 2%;
+  display: block;
+}
+
+.max {
+  letter-spacing: 2px;
+  margin: 2%;
+  display: block;
+}
+
+.wind {
+  letter-spacing: 2px;
+  margin: 2%;
+  display: block;
+}
+
+.humidity b {
+  color: red;
+  margin: 0 1%;
+}
+
+.humidity {
+  margin: 2%;
+  display: block;
+}
+
+strong {
+  color: white;
+}

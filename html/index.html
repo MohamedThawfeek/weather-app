@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <form action="/data" method="post" id="form">
+      <div id="TH">Live Weather</div>
+      <div>
+        <h3 class="wr">Weather Report</h3>
+        <p>
+          Uses Openweather API and provide live weather report based on the city
+          you provided
+        </p>
+        <div class="tab">
+          <h2 class="city_name">City Name</h2>
+          <input
+            type="text"
+            name="city"
+            placeholder="Enter your city name"
+            class="city"
+          />
+          <button class="btn">Show</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
